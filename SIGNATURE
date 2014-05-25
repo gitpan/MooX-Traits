@@ -1,0 +1,44 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.70.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 294505f858f11dd062e9916e3f50d88210a9ef54 CONTRIBUTING
+SHA1 e279571c2f54f8f0081e22c72f101cbbdcfb737e COPYRIGHT
+SHA1 6bd7b17d81be63d08d4efa6cb80106e72887842c CREDITS
+SHA1 e4adb4ce1fb83fcd6bdc6ab00d8172fef63bd9c5 Changes
+SHA1 11f9e802209b6051237857029df435cca7fd190b INSTALL
+SHA1 47870123f373f5185d6893cb98bf06a8a05510aa LICENSE
+SHA1 b7e029d8981484762ad6635b497af35376320b92 MANIFEST
+SHA1 79576fa736ceee137dc7e8502e4172d55182c86b META.json
+SHA1 da63736e90da1805e44c23b5297eb4470f8c23ae META.yml
+SHA1 69e5282f62e57878cfe20875c3257421c72577db Makefile.PL
+SHA1 988cb6cf3d900dce6f64166e743db3a9da9f4e60 README
+SHA1 17c0fc1832dd20e7483268f7769412b325dbe406 dist.ini
+SHA1 625ddba334f908e9d9f6666c33b0263d513f6ce2 doap.ttl
+SHA1 3a7819b867314d4540fe5d87e0a76adc3beba14d lib/MooX/Traits.pm
+SHA1 370b3c37cf8098397528244d9da20855de32b9f4 t/01basic.t
+SHA1 b11948927058ea0c45ae48c2d2cd1e962f89d561 t/02packagevariant.t
+SHA1 f13af5d89420320e2a2912830998ca44a76ff2d0 t/03roletiny.t
+SHA1 8bc56f3829a35c427a109df636a3a3aa09e462a4 t/from-moosex-traits/basic.t
+SHA1 36391e32c7c9b7a316aa402a20234bc89e34e89e t/from-moosex-traits/parameterized.t
+SHA1 47038a93283b1cc62a75aaaa52a5f22ff13cc2fc t/from-moosex-traits/subclass.t
+SHA1 cd9531b27260e9061e737fde05bd251b72d84a31 t/from-moosex-traits/with-traits.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iEYEARECAAYFAlOBkCYACgkQzr+BKGoqfTnu4wCdE4OlkZ+Eyhv4NAdHVG9AOug5
+Y4cAnA1zC5jPhvuVKegUxuFce4Us56j+
+=AGtv
+-----END PGP SIGNATURE-----
