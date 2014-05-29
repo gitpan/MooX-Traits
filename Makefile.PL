@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "automatically apply roles at object creation time",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.015, CPAN::Meta::Converter version 2.120921",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,10 +18,16 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
+                        develop   => { recommends => { "Dist::Inkt::Profile::TOBYINK" => 0.001 } },
                         runtime   => {
                                        recommends => { "Moo::Role" => 0 },
-                                       requires   => { "Module::Runtime" => 0, "Role::Tiny" => "1.000000" },
+                                       requires   => {
+                                                       "Exporter::Shiny" => 0,
+                                                       "Module::Runtime" => 0,
+                                                       "perl" => "5.006000",
+                                                       "Role::Tiny" => "1.000000",
+                                                       "Scalar::Util" => 0,
+                                                     },
                                      },
                         test      => {
                                        recommends => {
@@ -34,7 +40,8 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "MooX::Traits" => { file => "lib/MooX/Traits.pm", version => 0.001 },
+                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.002 },
+                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -43,7 +50,7 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooX-Traits/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;

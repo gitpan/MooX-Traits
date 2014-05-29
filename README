@@ -14,12 +14,13 @@ SYNOPSIS
        use Moo;
        with 'MooX::Traits';
 
-    Apply the roles to the class at new time:
+    Apply the roles to the class:
 
-       my $object = Class->with_traits('Role')->new( foo => 42 );
+       my $class = Class->with_traits('Role');
 
     Then use your customized class:
 
+       my $object = $class->new( foo => 42 );
        $object->isa('Class'); # true
        $object->does('Role'); # true
        $object->foo; # 42
@@ -68,6 +69,8 @@ BUGS
     <http://rt.cpan.org/Dist/Display.html?Queue=MooX-Traits>.
 
 SEE ALSO
+    MooX::Traits::Util.
+
     Moo::Role, Role::Tiny.
 
     MooseX::Traits, MouseX::Traits.
