@@ -63,11 +63,11 @@
    "provides" : {
       "MooX::Traits" : {
          "file" : "lib/MooX/Traits.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       },
       "MooX::Traits::Util" : {
          "file" : "lib/MooX/Traits/Util.pm",
-         "version" : "0.003"
+         "version" : "0.004"
       }
    },
    "release_status" : "stable",
@@ -81,5 +81,5 @@
          "http://dev.perl.org/licenses/"
       ]
    },
-   "version" : "0.003"
+   "version" : "0.004"
 }

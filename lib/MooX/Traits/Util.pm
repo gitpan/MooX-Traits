@@ -2,10 +2,12 @@ use 5.006;
 use strict;
 use warnings;
 
+BEGIN { if ($] < 5.010000) { require UNIVERSAL::DOES } };
+
 package MooX::Traits::Util;
 
 our $AUTHORITY = 'cpan:TOBYINK';
-our $VERSION   = '0.003';
+our $VERSION   = '0.004';
 
 use Exporter::Shiny qw(
 	new_class_with_traits

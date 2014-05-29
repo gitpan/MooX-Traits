@@ -40,8 +40,8 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.003 },
-                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.003 },
+                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.004 },
+                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.004 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -50,7 +50,7 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooX-Traits/project",
                       },
-  "version"        => 0.003,
+  "version"        => 0.004,
 };
 
 my %dynamic_config;

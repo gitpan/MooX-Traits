@@ -32,7 +32,7 @@
 	doap:maintainer      <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:name            "MooX-Traits";
 	doap:programming-language "Perl";
-	doap:release         <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-001>, <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-002>, <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-003>;
+	doap:release         <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-001>, <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-002>, <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-003>, <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-004>;
 	doap:shortdesc       "automatically apply roles at object creation time".
 
 <http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-001>
@@ -75,6 +75,20 @@
 	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
 	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooX-Traits-0.003.tar.gz>;
 	doap:revision        "0.003"^^xsd:string.
+
+<http://purl.org/NET/cpan-uri/dist/MooX-Traits/v_0-004>
+	a                    doap:Version;
+	dc:identifier        "MooX-Traits-0.004"^^xsd:string;
+	dc:issued            "2014-05-29"^^xsd:date;
+	doap-changeset:changeset [
+		doap-changeset:item [
+			a doap-changeset:Bugfix;
+			rdfs:label "MooX::Traits::Util should also load UNIVERSAL::DOES.";
+		];
+	];
+	doap-changeset:released-by <http://purl.org/NET/cpan-uri/person/tobyink>;
+	doap:file-release    <http://backpan.cpan.org/authors/id/T/TO/TOBYINK/MooX-Traits-0.004.tar.gz>;
+	doap:revision        "0.004"^^xsd:string.
 
 <http://purl.org/NET/cpan-uri/person/getty>
 	a                    foaf:Person;
