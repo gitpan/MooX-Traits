@@ -6,7 +6,7 @@ my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 my $meta = {
   "abstract"       => "automatically apply roles at object creation time",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
-  "dynamic_config" => 0,
+  "dynamic_config" => 1,
   "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
@@ -40,8 +40,8 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.002 },
-                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.002 },
+                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.003 },
+                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.003 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -50,10 +50,14 @@ my $meta = {
                         license      => ["http://dev.perl.org/licenses/"],
                         X_identifier => "http://purl.org/NET/cpan-uri/dist/MooX-Traits/project",
                       },
-  "version"        => 0.002,
+  "version"        => 0.003,
 };
 
 my %dynamic_config;
+do {
+$meta->{prereqs}{runtime}{requires}{'UNIVERSAL::DOES'} = 0 if $] < 5.010000;
+
+};
 
 my %WriteMakefileArgs = (
 	ABSTRACT   => $meta->{abstract},
