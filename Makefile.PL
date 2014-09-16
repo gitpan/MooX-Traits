@@ -7,7 +7,7 @@ my $meta = {
   "abstract"       => "automatically apply roles at object creation time",
   "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 1,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.021, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -40,17 +40,23 @@ my $meta = {
                                      },
                       },
   "provides"       => {
-                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.004 },
-                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.004 },
+                        "MooX::Traits"       => { file => "lib/MooX/Traits.pm", version => 0.005 },
+                        "MooX::Traits::Util" => { file => "lib/MooX/Traits/Util.pm", version => 0.005 },
                       },
   "release_status" => "stable",
   "resources"      => {
                         bugtracker   => { web => "http://rt.cpan.org/Dist/Display.html?Queue=MooX-Traits" },
                         homepage     => "https://metacpan.org/release/MooX-Traits",
                         license      => ["http://dev.perl.org/licenses/"],
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/MooX-Traits/project",
+                        repository   => {
+                                          type => "git",
+                                          url  => "git://github.com/tobyink/p5-moox-traits.git",
+                                          web  => "https://github.com/tobyink/p5-moox-traits",
+                                        },
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/MooX-Traits/project",
+                        x_IRC        => "irc://irc.perl.org/#moose",
                       },
-  "version"        => 0.004,
+  "version"        => 0.005,
 };
 
 my %dynamic_config;
